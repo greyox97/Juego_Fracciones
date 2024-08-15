@@ -1,53 +1,80 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     padding: 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('./image/Fondo_PP.jpg') no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
+    color: #fff;
+    line-height: 1.8; /* Mejor legibilidad */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
 }
 
+/* Estilos de los elementos de menú */
 .menu-item {
     display: block;
-    margin: 10px auto;
-    padding: 15px 20px;
+    margin: 20px auto;
+    padding: 15px 30px;
     width: 80%;
-    max-width: 300px;
-    font-size: 1.2em;
+    max-width: 340px;
+    font-size: 1.3em;
     color: #ffffff;
-    background-color: #007bff;
+    background: linear-gradient(to right, #007bff, #0056b3);
     border: none;
-    border-radius: 5px;
+    border-radius: 15px; /* Bordes más redondeados para un diseño más moderno */
     text-decoration: none;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:focus, .menu-item:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to right, #0056b3, #003d75);
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* Estilos de formulario */
 form {
-    margin: 20px 0;
+    margin: 40px auto;
+    background-color: rgba(20, 190, 233, 0.85); /* Fondo blanco con más opacidad */
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más profunda para dar énfasis */
+    max-width: 550px;
 }
 
 input {
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 150px;
+    padding: 12px 15px;
+    margin-right: 15px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    width: calc(100% - 150px);
+    transition: border-color 0.3s ease;
 }
 
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Resalta el input al estar enfocado */
+}
+
+/* Estilos del botón */
 button {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 30px;
+    font-size: 1.1em;
     color: #ffffff;
-    background-color: #28a745;
+    background: linear-gradient(to right, #28a745, #218838);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background: linear-gradient(to right, #218838, #196f31);
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25); /* Sombra más intensa */
 }
-
